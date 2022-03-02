@@ -1,11 +1,14 @@
-import './App.css'
+import { ChakraProvider } from '@chakra-ui/react';
+import Header from './components/Header';
+import Main from './components/Main';
 
 function App() {
 
   return (
-    <div className="App">
-      <h1>Rocket Jam</h1>
-    </div>
+    <ChakraProvider>
+      <Header />
+      <Main />
+    </ChakraProvider>
   )
 }
 
